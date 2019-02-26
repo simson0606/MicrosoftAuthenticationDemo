@@ -1,0 +1,6 @@
+framework module Pods_MicrosoftAuthenticationDemo {
+  umbrella header "Pods-MicrosoftAuthenticationDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

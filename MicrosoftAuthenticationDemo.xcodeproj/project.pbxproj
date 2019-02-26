@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79C6CD826CFB6BFB70D93B2A /* Pods_MicrosoftAuthenticationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA8194038F919086176719 /* Pods_MicrosoftAuthenticationDemo.framework */; };
 		F413E8702223EDBF008B49FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E86F2223EDBF008B49FC /* AppDelegate.swift */; };
 		F413E8722223EDBF008B49FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E8712223EDBF008B49FC /* ViewController.swift */; };
 		F413E8752223EDBF008B49FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F413E8732223EDBF008B49FC /* Main.storyboard */; };
 		F413E8772223EDC1008B49FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F413E8762223EDC1008B49FC /* Assets.xcassets */; };
 		F413E87A2223EDC1008B49FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F413E8782223EDC1008B49FC /* LaunchScreen.storyboard */; };
+		F413E887222426EB008B49FC /* MicrosoftAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E886222426EB008B49FC /* MicrosoftAuthentication.swift */; };
+		F413E88A22242CDF008B49FC /* MicrosoftAuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E88922242CDF008B49FC /* MicrosoftAuthenticationDelegate.swift */; };
+		F413E88C22242D1A008B49FC /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E88B22242D1A008B49FC /* UserInformation.swift */; };
+		F413E88E22242F0D008B49FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E88D22242F0D008B49FC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31FA8194038F919086176719 /* Pods_MicrosoftAuthenticationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrosoftAuthenticationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3454F4A726888EE92F09DE /* Pods-MicrosoftAuthenticationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftAuthenticationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicrosoftAuthenticationDemo/Pods-MicrosoftAuthenticationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6EBF18E749963A4D6DFBA922 /* Pods-MicrosoftAuthenticationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftAuthenticationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicrosoftAuthenticationDemo/Pods-MicrosoftAuthenticationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F413E86C2223EDBF008B49FC /* MicrosoftAuthenticationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicrosoftAuthenticationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F413E86F2223EDBF008B49FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F413E8712223EDBF008B49FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,11 @@
 		F413E8762223EDC1008B49FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F413E8792223EDC1008B49FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F413E87B2223EDC1008B49FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F413E8832224233B008B49FC /* MicrosoftAuthenticationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicrosoftAuthenticationDemo.entitlements; sourceTree = "<group>"; };
+		F413E886222426EB008B49FC /* MicrosoftAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthentication.swift; sourceTree = "<group>"; };
+		F413E88922242CDF008B49FC /* MicrosoftAuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthenticationDelegate.swift; sourceTree = "<group>"; };
+		F413E88B22242D1A008B49FC /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		F413E88D22242F0D008B49FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C6CD826CFB6BFB70D93B2A /* Pods_MicrosoftAuthenticationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C13A346CC4235F9AF4C4983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31FA8194038F919086176719 /* Pods_MicrosoftAuthenticationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F413E8632223EDBF008B49FC = {
 			isa = PBXGroup;
 			children = (
 				F413E86E2223EDBF008B49FC /* MicrosoftAuthenticationDemo */,
 				F413E86D2223EDBF008B49FC /* Products */,
+				FF47FE0DB3C05D8364957A31 /* Pods */,
+				7C13A346CC4235F9AF4C4983 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,60 @@
 		F413E86E2223EDBF008B49FC /* MicrosoftAuthenticationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F413E86F2223EDBF008B49FC /* AppDelegate.swift */,
-				F413E8712223EDBF008B49FC /* ViewController.swift */,
-				F413E8732223EDBF008B49FC /* Main.storyboard */,
-				F413E8762223EDC1008B49FC /* Assets.xcassets */,
-				F413E8782223EDC1008B49FC /* LaunchScreen.storyboard */,
-				F413E87B2223EDC1008B49FC /* Info.plist */,
+				F413E89122242F88008B49FC /* Misc */,
+				F413E89022242F80008B49FC /* Views */,
+				F413E88F22242F64008B49FC /* ViewControllers */,
+				F413E88822242CCB008B49FC /* Models */,
 			);
 			path = MicrosoftAuthenticationDemo;
+			sourceTree = "<group>";
+		};
+		F413E88822242CCB008B49FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F413E86F2223EDBF008B49FC /* AppDelegate.swift */,
+				F413E886222426EB008B49FC /* MicrosoftAuthentication.swift */,
+				F413E88922242CDF008B49FC /* MicrosoftAuthenticationDelegate.swift */,
+				F413E88B22242D1A008B49FC /* UserInformation.swift */,
+				F413E88D22242F0D008B49FC /* Constants.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F413E88F22242F64008B49FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F413E8712223EDBF008B49FC /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F413E89022242F80008B49FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F413E8732223EDBF008B49FC /* Main.storyboard */,
+				F413E8782223EDC1008B49FC /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F413E89122242F88008B49FC /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F413E8832224233B008B49FC /* MicrosoftAuthenticationDemo.entitlements */,
+				F413E8762223EDC1008B49FC /* Assets.xcassets */,
+				F413E87B2223EDC1008B49FC /* Info.plist */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		FF47FE0DB3C05D8364957A31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF18E749963A4D6DFBA922 /* Pods-MicrosoftAuthenticationDemo.debug.xcconfig */,
+				3D3454F4A726888EE92F09DE /* Pods-MicrosoftAuthenticationDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F413E87E2223EDC1008B49FC /* Build configuration list for PBXNativeTarget "MicrosoftAuthenticationDemo" */;
 			buildPhases = (
+				01A4C59983B4BFE57AB3B798 /* [CP] Check Pods Manifest.lock */,
 				F413E8682223EDBF008B49FC /* Sources */,
 				F413E8692223EDBF008B49FC /* Frameworks */,
 				F413E86A2223EDBF008B49FC /* Resources */,
+				6C49824AFC43C02C9EEEDB35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +168,11 @@
 				TargetAttributes = {
 					F413E86B2223EDBF008B49FC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,13 +207,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01A4C59983B4BFE57AB3B798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrosoftAuthenticationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C49824AFC43C02C9EEEDB35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MicrosoftAuthenticationDemo/Pods-MicrosoftAuthenticationDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSAL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicrosoftAuthenticationDemo/Pods-MicrosoftAuthenticationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F413E8682223EDBF008B49FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F413E88C22242D1A008B49FC /* UserInformation.swift in Sources */,
+				F413E887222426EB008B49FC /* MicrosoftAuthentication.swift in Sources */,
+				F413E88A22242CDF008B49FC /* MicrosoftAuthenticationDelegate.swift in Sources */,
 				F413E8722223EDBF008B49FC /* ViewController.swift in Sources */,
 				F413E8702223EDBF008B49FC /* AppDelegate.swift in Sources */,
+				F413E88E22242F0D008B49FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +400,14 @@
 		};
 		F413E87F2223EDC1008B49FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EBF18E749963A4D6DFBA922 /* Pods-MicrosoftAuthenticationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicrosoftAuthenticationDemo/MicrosoftAuthenticationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WFRP4F9Y8V;
 				INFOPLIST_FILE = MicrosoftAuthenticationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +421,14 @@
 		};
 		F413E8802223EDC1008B49FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3454F4A726888EE92F09DE /* Pods-MicrosoftAuthenticationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicrosoftAuthenticationDemo/MicrosoftAuthenticationDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WFRP4F9Y8V;
 				INFOPLIST_FILE = MicrosoftAuthenticationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
